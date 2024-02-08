@@ -6,7 +6,7 @@ import playersData from "./Players";
 
 const PlayersList = () => {
 return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div style={{ display: "flex", flexWrap: "wrap", justifyContent:"space-between" }}>
     {playersData.map((player, index) => (
         <Player key={index} {...player} />
     ))}
